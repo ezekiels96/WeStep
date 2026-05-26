@@ -337,6 +337,175 @@ main {
 .site-footer .footer-links { margin-bottom: 8px; }
 .site-footer .footer-links a { margin: 0 10px; }
 
+/* ---------- App Store button ---------- */
+.btn-appstore {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: #0F172A;
+  color: #fff;
+  border-radius: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.btn-appstore:hover, .btn-appstore:focus {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+.btn-appstore .ap-logo { display: block; }
+.btn-appstore .ap-text { display: flex; flex-direction: column; line-height: 1.05; text-align: left; }
+.btn-appstore .ap-text small { font-size: 0.7rem; opacity: 0.85; font-weight: 500; }
+.btn-appstore .ap-text strong { font-size: 1.05rem; font-weight: 600; }
+
+/* ---------- Section heading ---------- */
+.section {
+  margin-top: 72px;
+}
+.section-head {
+  text-align: center;
+  margin: 0 auto 28px;
+  max-width: 56ch;
+}
+.section-head .eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.section-head h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.section-head p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+/* ---------- Use case chips ---------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.chip {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border);
+  color: var(--ink-soft);
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Two-col list ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.col {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.col h3 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+.col ul { margin: 0; padding-left: 18px; }
+.col li { color: var(--ink-soft); font-size: 0.96rem; margin-bottom: 4px; }
+
+/* ---------- Privacy callout ---------- */
+.privacy-callout {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px clamp(22px, 4vw, 40px);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+.privacy-callout h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.privacy-callout p {
+  margin: 0 auto 16px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+.privacy-callout p:last-child { margin-bottom: 0; }
+
+/* ---------- FAQ ---------- */
+.faq {
+  display: grid;
+  gap: 10px;
+}
+.faq details {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+}
+.faq details[open] { box-shadow: var(--shadow-md); }
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 0;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+.faq details[open] summary::after { content: "−"; }
+.faq details p {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 560px) {
   main { padding: 36px 18px 48px; }

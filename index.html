@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ezekiel Sung</title>
+  <meta name="description" content="Apps and projects by Ezekiel Sung." />
+  <meta name="theme-color" content="#93C5FD" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #0F172A;
+      background: linear-gradient(135deg, #93C5FD 0%, #6EE7B7 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .card {
+      background: #fff;
+      border-radius: 28px;
+      padding: 40px clamp(24px, 4vw, 48px);
+      box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12), 0 8px 20px rgba(15, 23, 42, 0.06);
+      max-width: 440px;
+      width: 100%;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+    .subtitle {
+      margin: 0 0 28px;
+      color: #64748B;
+      font-size: 0.98rem;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #047857;
+      margin-bottom: 12px;
+    }
+    ul.projects {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    ul.projects a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: #F8FAFC;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      color: #0F172A;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    ul.projects a:hover, ul.projects a:focus {
+      background: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+    }
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #93C5FD, #6EE7B7);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .mark svg { display: block; }
+    .arrow {
+      margin-left: auto;
+      color: #94A3B8;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .project-meta {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+    .project-meta small {
+      font-weight: 500;
+      color: #64748B;
+      font-size: 0.82rem;
+      margin-top: 2px;
+    }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: #64748B;
+      font-size: 0.85rem;
+    }
+    footer a { color: #64748B; text-decoration: none; }
+    footer a:hover { color: #0F172A; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="eyebrow">Ezekiel Sung</span>
+    <h1>Projects</h1>
+    <p class="subtitle">A few things I'm working on.</p>
+    <ul class="projects">
+      <li>
+        <a href="/westep/">
+          <span class="mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="8" rx="5" ry="6" fill="#fff"/>
+              <ellipse cx="12" cy="18.5" rx="4" ry="4.5" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="project-meta">
+            WeStep
+            <small>Social step tracking for friends</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+    </ul>
+    <footer>&copy; 2026 Ezekiel Sung</footer>
+  </div>
+</body>
+</html>
